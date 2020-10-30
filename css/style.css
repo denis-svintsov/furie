@@ -250,11 +250,25 @@ header {
 .your-car__form {
   display: flex;
   width: 100%;
+  /* Firefox 19+ */
+  /* Firefox 18- */
 }
 @media (max-width: 1200px) {
   .your-car__form {
     flex-direction: column;
   }
+}
+.your-car__form ::-webkit-input-placeholder {
+  color: #3c3c3c;
+}
+.your-car__form ::-moz-placeholder {
+  color: #3c3c3c;
+}
+.your-car__form :-moz-placeholder {
+  color: #3c3c3c;
+}
+.your-car__form :-ms-input-placeholder {
+  color: #3c3c3c;
 }
 
 .your-car__input {
@@ -263,7 +277,7 @@ header {
   font-size: 30px;
   line-height: 72px;
   font-weight: 700;
-  color: #3c3c3c;
+  color: #000;
   background: #131310;
   border-bottom: #272726 solid 1px;
   margin: 0 105px 0 0;
