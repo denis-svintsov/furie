@@ -1120,3 +1120,43 @@ header {
   padding: 0 65px;
   border-radius: 100px;
 }
+
+footer {
+  font-family: "Montserrat", sans-serif;
+  display: none;
+  background: #131310;
+  padding: 15px 0;
+}
+@media (max-width: 664px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.footer__mail {
+  line-height: 32px;
+  background: url(../images/header/icons/mail.png) 0 50% no-repeat;
+  padding: 0 0 0 50px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  margin: 0 0 15px 0;
+}
+@media (max-width: 375px) {
+  .footer__mail {
+    font-size: 20px;
+  }
+}
+
+.footer__tel {
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  line-height: 32px;
+  background: url(../images/header/icons/tel.png) 0 50% no-repeat;
+  padding: 0 0 0 50px;
+}
+@media (max-width: 375px) {
+  .footer__tel {
+    font-size: 20px;
+  }
+}
