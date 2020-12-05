@@ -316,8 +316,10 @@ body.lock {
 }
 
 .your-car {
+  position: relative;
   background: #131310;
-  padding: 150px 0 0 0;
+  padding: 75px 0 0 0;
+  min-width: 0;
 }
 @media (max-width: 768px) {
   .your-car {
@@ -333,6 +335,49 @@ body.lock {
 .your-car__row {
   display: flex;
   justify-content: center;
+  min-width: 0;
+  min-height: 0;
+}
+
+.image-slider {
+  max-width: 100%;
+  max-height: 500px;
+  padding: 30px 30px 70px 30px;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 60px 0;
+}
+@media (max-width: 767px) {
+  .image-slider {
+    max-height: 250px;
+    margin: 0 0 30px 0;
+  }
+}
+@media (max-width: 425px) {
+  .image-slider {
+    max-height: 250px;
+    margin: 0 0 15px 0;
+  }
+}
+@media (max-width: 374px) {
+  .image-slider {
+    max-height: 200px;
+  }
+}
+
+.image-slider__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 30px;
+}
+.image-slider__image img {
+  max-width: 100%;
+}
+
+.image-slider .swiper-pagination {
+  right: 0;
 }
 
 .your-car__image {
