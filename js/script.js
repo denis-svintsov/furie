@@ -1,6 +1,7 @@
 //Иницилизация Swiper
 new Swiper('.image-slider', {
             direction: 'vertical',
+            initialSlide: 1,
             slidesPerView: 1,
             spaceBetween: 30,
             mousewheel: true,
