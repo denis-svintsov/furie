@@ -216,14 +216,16 @@ document.documentElement.addEventListener("click", function (e) {
 });
 
 $('.content-head-form__btn').click(function (event) {
-	if (document.head_form.head_make.value == "" || document.head_form.head_model.value == "" || document.head_form.head_city.value == "") {
+	if (document.head_form.head_make.value == "" && document.head_form.head_model.value == "" && document.head_form.head_city.value == "") {
 		if (document.head_form.head_make.value == "") { document.head_form.head_make.classList.add('_empty') } else { document.head_form.head_make.classList.remove('_empty') };
 		if (document.head_form.head_model.value == "") { document.head_form.head_model.classList.add('_empty') } else { document.head_form.head_model.classList.remove('_empty') };
 		if (document.head_form.head_city.value == "") { document.head_form.head_city.classList.add('_empty') } else { document.head_form.head_city.classList.remove('_empty') };
+		$('.content-head-form__empty').addClass('_active');
 		event.preventDefault();
 	} else {
 		$('.popup').removeClass('_open');
 		$('body').removeClass('_lock-popup');
+		$('.content-head-form__empty').removeClass('_active');
 		body.style.paddingRight = '0px';
 	}
 });

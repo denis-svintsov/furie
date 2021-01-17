@@ -373,6 +373,17 @@ h2 {
   /* Firefox 18- */
 }
 
+.content-head-form__empty {
+  display: none;
+  text-transform: uppercase;
+  color: red;
+  margin: 0px 0px 20px 0px;
+}
+
+.content-head-form__empty._active {
+  display: block;
+}
+
 .content-head-form__input {
   background-color: #191917;
   color: #fff;
